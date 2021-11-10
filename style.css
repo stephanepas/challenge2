@@ -1,0 +1,93 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-family: poppins;
+    font-size: 15px;
+}
+body{
+    padding: 4rem 2rem;
+    text-align: center;
+}
+#header h3{
+    font-weight: 600;
+    color: hsl(234, 12%, 34%);
+    padding-bottom: 1rem;
+}
+#header span{
+    font-weight: 200;
+    color: hsl(229, 6%, 66%);
+}
+#header p{
+    font-size: 0.9rem;
+    font-weight: 200;
+    color: hsl(229, 6%, 66%);
+    padding-bottom: 4rem;
+}
+#supervisor, #team, #karma, #calculator{
+    text-align: left;
+    margin-bottom: 1.5rem;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 1px 10px 20px 2px rgba(0, 0, 0, 0.2);
+}
+#supervisor{
+    border-top: 3px solid hsl(180, 62%, 55%);
+}
+#team{
+    border-top: 3px solid hsl(0, 78%, 62%);
+}
+#karma{
+    border-top: 3px solid hsl(34, 97%, 64%);
+}
+#calculator{
+    border-top: 3px solid hsl(212, 86%, 64%);
+}
+.img{
+    position: relative;
+    bottom: 6px;
+    Left: 75%;
+    width: 20%;
+}
+h4{
+    font-weight: 600;
+    color: hsl(234, 12%, 34%);
+}
+.para{
+    font-size: 0.7rem;
+    font-weight: 200;
+    color: hsl(229, 6%, 66%);
+    padding-bottom: 2rem;
+}
+@media only screen and (min-width: 376px) {
+    body{
+        display: grid;
+        align-items: center;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        gap: 2rem;
+    }
+    #supervisor, #team, #karma, #calculator{
+        height: max-content;
+    }
+    #header{
+        grid-area: 1 / 1 / 2 / 4;
+        width: 40%;
+        margin: auto;
+    }
+    #supervisor{
+        grid-area: 2 / 1 / 4 / 2;
+    }
+    #team{
+        grid-area: 2 / 2 / 3 / 3;
+    }
+    #karma{
+        grid-area: 3 / 2 / 4 / 3;
+    }
+    #calculator{
+        grid-area: 2 / 3 / 4 / 4;
+    }
+    
+}
